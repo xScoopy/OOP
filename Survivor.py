@@ -11,7 +11,7 @@ class Survivor(Player):
         self.current_ability_charge = Survivor.starting_ability_charge
 
     @classmethod
-    def set_ability_charge(cls, value):
+    def _set_ability_charge(cls, value):
         """Used to set starting ability charge to another value for possible different game modes"""
         cls.starting_ability_charge = value
 
